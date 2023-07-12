@@ -11,29 +11,21 @@ Aberturas de PVC
 
 
 {% block content %}
-        <h1 class ="uno">Nuestros Trabajos en PVC</h1>
+<h1 class ="uno" >Nuestros trabajos en PVC</h1>
+<h2>Estos son las obras que hemos hecho hasta ahora</h2>
 
-        
-
-      
-
-
-        <h2>Estos son las obras que hemos hecho hasta ahora</h2>
-    
-            {% for PVC in PVC %}
-            <div class="card" style="width: 18rem;">
-                <img src={{PVC.imagen.url}} class="card-img-top" alt={{PVC.title}}>
-                <div class="card-body">
-                  <h5 class="card-title">{{PVC.title}}</h5>
-                  <p class="card-text">{{PVC.description}}</p>
-              </div>
-     
-            {% endfor %}
-  
-
-
-{% endblock %}
-        
+          {% for PVC in PVC %}
+          <div class="card" style="width: 18rem;">
+            <img src={{PVC.imagen.url}} class="card-img-top" alt={{PVC.title}}>
+            <div class="card-body">
+              <h5 class="card-title">{{PVC.title}}</h5>
+              <p class="card-text">{{PVC.description}}</p>
+            </div>
+          </div>
+          <br></br>
+          
+          {% endfor %}
+{% endblock  %}
         
         
 
