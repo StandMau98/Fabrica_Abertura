@@ -44,8 +44,11 @@ img{
 
 
 .mb-2{
-    width: 1000px;
-    height: 250px;
+    width: 900px;
+    height: 350px;
+    border-radius: 15%;
+    margin: 10px;
+    
     
 
     
@@ -57,6 +60,9 @@ img{
 }
 
 .formulario{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 50px;
    
 }
 
@@ -67,7 +73,24 @@ h2{
 
     
 .mapa{
-    border-style: double;
+ align-items:center;
+ 
+
+}
+
+.mapas{
+   border-style: double;
+   border-width: 20px;
+   width: 640px;
+   margin-left: 23%;
+   
+   
+  
+  
+
+   
+
+
 }
 
 
@@ -78,4 +101,47 @@ h2{
 h1{
     text-align: center;
     color: white;
+}
+
+#nombre{
+    border-radius: 15%;
+    margin: 10px;
+    
+
+}
+
+#email{
+    border-radius: 15%;
+    margin: 10px;
+}
+
+
+#apellido{
+    border-radius: 15%;
+    margin: 10px;
+    margin-left: 15px
+}
+form{
+    margin: 150px;
+    background-color: rgb(180, 138, 138);
+    border-style: double;
+    border-radius: 15%;
+    border-width: 20px;
+    padding-left: 5px;
+}
+
+.boton{
+    color: red;
+    margin: 30px;
+    
+
+}
+
+.parrafo{
+    margin: 30px;
+    font-size:medium;
+}
+
+.form-control{
+    border-radius: 10%;
 }
