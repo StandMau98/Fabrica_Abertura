@@ -1,0 +1,81 @@
+.primero{
+    margin: 100px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:x-large;
+    text-transform:uppercase;
+    background-color: transparent;
+
+
+    
+    
+
+}
+p{
+ color: white;
+ background-color: transparent;
+
+}
+
+
+
+
+.pie{
+    text-align: center;
+    background-color: white;
+    padding: 7%;
+    border-style: double;
+    
+    
+    
+    
+}
+
+
+h4{
+    color:white;
+    text-align: center;
+}
+
+img{
+    border-style: double;
+    
+}
+
+
+.mb-2{
+    width: 1000px;
+    height: 250px;
+    
+
+    
+}
+
+.uno{
+    text-align: center;
+    color: white;
+}
+
+.formulario{
+   
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+    
+.mapa{
+    border-style: double;
+}
+
+
+.card{
+    background-color: red;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}

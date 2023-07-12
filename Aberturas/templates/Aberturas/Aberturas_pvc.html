@@ -1,0 +1,45 @@
+{% extends "Aberturas/index.html" %}
+
+{% block title %}
+Aberturas de PVC
+{% endblock %}
+{% block image %}
+<body class"cuerpo" style="background-image:url(https://infonegocios.info/content/images/2022/07/21/129743/conversions/Italplast-fabrica-aberturas-PVC-2-medium-size.jpg)">
+</body>
+{% endblock %}
+
+
+
+{% block content %}
+        <h1 class ="uno">Nuestros Trabajos en PVC</h1>
+
+        
+
+      
+
+<main class="mainIndex">
+    <section class="animate__animated animate__backInUp" id="seccion1">
+        <h2>Estos son las obras que hemos hecho hasta ahora</h2>
+    </section>
+    <p style="color: black;">{{ Trabajo_PVC }}</p>
+    <section class="animate__animated animate__backInUp" id="seccionMenu">
+            {% for PVC in Trabajo_PVC %}
+        <article class="cajaComidas">
+            <img src={{PVC.imagen.url}} alt="Foto de {{PVC.title}}" class="imgComidas">
+            <div>
+                <h3>{{PVC.title}}</h3>
+            </div>
+        </article>
+            {% endfor %}
+    </section>
+</main>
+
+
+{% endblock %}
+        
+        
+        
+
+
+
+    

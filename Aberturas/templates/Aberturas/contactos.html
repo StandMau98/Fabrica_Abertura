@@ -1,0 +1,36 @@
+{% extends "Aberturas/index.html" %}
+
+{% block title %}
+Contacto
+{% endblock %}
+
+{% block image %}
+<body class"cuerpo" style="background-image:url(https://www.aukot.com.ar/wp-content/uploads/2020/01/Aukot-aberturas-PVC-obras-11.jpg)">
+</body>
+{% endblock %}
+
+{% block content %}
+        <h1 class= "uno">CONTACTO</h1>
+ <FORM>
+    <P class= "formulario">
+    <LABEL for="nombre">Nombre: </LABEL>
+              <INPUT type="text" id="nombre"><BR>
+    <LABEL for="apellido">Apellido: </LABEL>
+              <INPUT type="text" id="apellido"><BR>
+    <LABEL for="email">email: </LABEL>
+              <INPUT type="text" id="email"><BR>
+    </P>
+    <div class="mb-2" style = "color: white">
+        <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <INPUT type="submit" value="Enviar"> <INPUT type="reset">
+
+ </FORM>
+
+ <h4>Nos podes encontrar AQUI</h4>
+<div class="mapa">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952.3416214675267!2d-58.21554921795267!3d-34.8028661412052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a328f38fb3e531%3A0xd8ff3e1323329dae!2sAberturas%20Home!5e0!3m2!1ses-419!2sar!4v1689028077054!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+</div>
+        
+{% endblock  %}

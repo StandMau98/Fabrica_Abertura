@@ -1,0 +1,33 @@
+{% extends "Aberturas/index.html" %}
+
+{% block title %}
+Aberturas de Aluminio
+{% endblock %}
+{% block image %}
+<body class"cuerpo" style="background-image:url(https://pilarglass.com.ar/wp-content/uploads/2021/11/fabrica-aberturas-aluminio-pvc-vidrio.webp)">
+</body>
+{% endblock %}
+
+{% block content %}
+<h1 class ="uno" >Nuestros trabajos en Aluminio</h1>
+<main class="mainIndex">
+  <section class="animate__animated animate__backInUp" id="seccion1">
+     
+  </section>
+  <p style="color: black;">{{ Trabajo_Aluminio }}</p>
+  <section class="animate__animated animate__backInUp" id="seccionMenu">
+          {% for Aluminio in Trabajo_Aluminio %}
+      <article class="cajaComidas">
+          <img src={{Aluminio.imagen.url}} alt="Foto de {{Aluminio.title}}" class="imgComidas">
+          <div>
+              <h3>{{Aluminio.title}}</h3>
+          </div>
+      </article>
+          {% endfor %}
+  </section>
+</main>
+
+         
+
+      
+{% endblock  %}
