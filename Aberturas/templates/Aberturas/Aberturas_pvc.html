@@ -17,22 +17,19 @@ Aberturas de PVC
 
       
 
-<main class="mainIndex">
-    <section class="animate__animated animate__backInUp" id="seccion1">
+
         <h2>Estos son las obras que hemos hecho hasta ahora</h2>
-    </section>
-    <p style="color: black;">{{ Trabajo_PVC }}</p>
-    <section class="animate__animated animate__backInUp" id="seccionMenu">
-            {% for PVC in Trabajo_PVC %}
-        <article class="cajaComidas">
-            <img src={{PVC.imagen.url}} alt="Foto de {{PVC.title}}" class="imgComidas">
-            <div>
-                <h3>{{PVC.title}}</h3>
-            </div>
-        </article>
+    
+            {% for PVC in PVC %}
+            <div class="card" style="width: 18rem;">
+                <img src={{PVC.imagen.url}} class="card-img-top" alt={{PVC.title}}>
+                <div class="card-body">
+                  <h5 class="card-title">{{PVC.title}}</h5>
+                  <p class="card-text">{{PVC.description}}</p>
+              </div>
+     
             {% endfor %}
-    </section>
-</main>
+  
 
 
 {% endblock %}

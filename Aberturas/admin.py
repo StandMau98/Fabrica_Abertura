@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import *
+from .models import Trabajo_PVC,Trabajo_Aluminio
 
 class TrabajosAdmin(admin.ModelAdmin):
     readonly_fields = ("date", "modify")

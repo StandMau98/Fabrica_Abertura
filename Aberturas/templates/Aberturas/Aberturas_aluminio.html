@@ -10,24 +10,15 @@ Aberturas de Aluminio
 
 {% block content %}
 <h1 class ="uno" >Nuestros trabajos en Aluminio</h1>
-<main class="mainIndex">
-  <section class="animate__animated animate__backInUp" id="seccion1">
-     
-  </section>
-  <p style="color: black;">{{ Trabajo_Aluminio }}</p>
-  <section class="animate__animated animate__backInUp" id="seccionMenu">
-          {% for Aluminio in Trabajo_Aluminio %}
-      <article class="cajaComidas">
-          <img src={{Aluminio.imagen.url}} alt="Foto de {{Aluminio.title}}" class="imgComidas">
-          <div>
-              <h3>{{Aluminio.title}}</h3>
+<h2>Estos son las obras que hemos hecho hasta ahora</h2>
+
+          {% for Aluminio in Aluminio %}
+          <div class="card" style="width: 18rem;">
+            <img src={{Aluminio.imagen.url}} class="card-img-top" alt={{Aluminio.title}}>
+            <div class="card-body">
+              <h5 class="card-title">{{Aluminio.title}}</h5>
+              <p class="card-text">{{Aluminio.description}}</p>
+            </div>
           </div>
-      </article>
           {% endfor %}
-  </section>
-</main>
-
-         
-
-      
 {% endblock  %}
